@@ -48,3 +48,12 @@ sources:
       - name: facebook
         identifier: raw_gz_facebook
         description: facebook campaign
+
+models:
+  - name: int_campagns.sql
+    description: primary key
+    tests:
+      - unique:
+          column_name: "(date_date|| '-' || campaign_key)"
+      - not null:
+          column_name: "(date_date|| '-' || campaign_key)"
