@@ -57,3 +57,11 @@ models:
           column_name: "(date_date|| '-' || campaign_key)"
       - not null:
           column_name: "(date_date|| '-' || campaign_key)"
+
+
+models:
+  - name: int_campagns_day.sql
+    description: pas de valeur NULL en date
+    tests:
+      - not null:
+          column_name: "date_date"
