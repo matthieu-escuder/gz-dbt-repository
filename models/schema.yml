@@ -65,3 +65,9 @@ models:
     tests:
       - not null:
           column_name: "date_date"
+
+  - name: finance_campagns_day.sql
+    description: pas de valeur NULL en date
+    tests:
+      - not null:
+          column_name: "date_date"
